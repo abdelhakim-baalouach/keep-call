@@ -9,10 +9,6 @@ class GenerateRandomController extends Controller
 
     public function show($id)
     {
-        $data = [
-            'random'=> rand(),
-            'asset_id' => $id
-        ];
-        return response()->json($data, 200);
+        return response()->json(rand(), 200);
     }
 }

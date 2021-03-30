@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Entity
 @Data
@@ -22,4 +23,5 @@ public class Category {
             joinColumns = @JoinColumn( name = "category_id" ),
             inverseJoinColumns = @JoinColumn( name = "asset_id" ) )
     private List<Asset> assets = new ArrayList<>();
+
 }

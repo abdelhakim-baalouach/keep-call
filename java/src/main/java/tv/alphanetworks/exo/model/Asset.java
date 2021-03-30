@@ -19,7 +19,6 @@ public class Asset {
     private Long asset_id;
     private String asset_name;
 
-    @JsonIgnore
     @Transient
     private long downloads;
 
